@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<!-- ********************************************************** -->
+<!--     Daragh Walshe        B00064428         April. 2013     -->
+<!--     Web. Dev. 2          website project       			-->
+<!-- ********************************************************** -->
+
+<html>
+	<head>
+
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<meta charset="utf-8">
+
+		<title>
+			Join Up
+		</title>
+
+		<style>
+			@import"css/sitestyle.css";
+		</style>
+
+		<script type="text/javascript" src="js/fishy.js"> </script>
+
+	</head>
+
+<body onLoad="hide('ans1');hide('ans2');hide('ans3');">
+
+<img src="images/under_water.jpg" alt="under_water" id="bg_img">
+
+<div id="wrapper">
+
+<!--  ********************  Nav Bar  ********************-->
+	<nav>
+		<ul>
+			<li role="link">
+				<a href="index.html">Home Page</a>
+			</li>
+			<li role="link">
+				<a href="news.html">News</a>
+			</li>
+			<li role="link">
+				<a href="join_up.html" id="thispage">Join up</a>
+			</li>
+			<li role="link">
+				<a href="slideshow.html">Slideshow</a>
+			</li>
+			<li role="link">
+				<a href="beginners.html">Beginners</a>
+			</li>
+			<li role="link">
+				<a href="shop.html">Shop</a>
+			</li>
+			<li role="link">
+				<a href="siteMap.html">Site Map</a>
+			</li>
+		</ul>
+	</nav>
+
+<!--  *********************  Header  ********************-->
+	<header>
+		<img src="images/banner.png" alt="banner_pic" id="headerImg">
+	</header>
+<!--  **********************  Body  *********************-->
+	<div class="twoColleft">
+
+	<br>
+	<form action="#" method="post" id="memberForm">
+
+		<h1>Membership Form</h1>
+
+		<p>
+			Fill out the membership form<br>
+			and become a member of our club
+		</p>
+
+		<p>
+			<strong>Complete the form and press the send button</strong> &nbsp;&nbsp;&nbsp;
+			<span class="redstar">* Denotes a required field</span>
+		</p>
+
+
+	<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+		<fieldset>
+			<legend>Personal Details</legend>
+
+			<div id="leftCol">
+
+				<p>
+					<label for="user">Name :</label>
+					<input type="text"  name="user" id = "user" required
+					placeholder = "full name" autofocus>
+					<span class="redstar"> *</span><br>
+				</p>
+
+				<p>
+					<label>Date of Birth :</label>
+					<input type="date" name="dob" required>
+					<span class="redstar"> *</span><br>
+				</p>
+
+			</div>
+
+			<div id="rightCol">
+
+				<p>
+					<label for="address">Address :</label>
+					<input type="text"  name="address" id = "address" required
+					placeholder = "your postal address">
+					<span class="redstar"> *</span><br>
+				</p>
+
+				<p>
+					<label for="email">E-Mail :</label>
+					<input type="email"  name="email" id = "email" required
+					placeholder="eg: jbloggs@gmail.com">
+					<span class="redstar"> *</span><br>
+				</p>
+
+			</div>
+
+		</fieldset>
+		<br>
+
+	<!-- xxxxxx  Buttons   xxxxx -->
+
+		<div id="buttons">
+			<span class="button">
+			<input type="submit" name="submit" id="submit" value="Send">
+			</span>
+
+			<span class="button">
+			<input type="reset" name="reset" id="reset" value="Clear">
+			</span>
+		</div>
+
+	</form>
+
+	<!-- xxxxxxxx  Joke Corner  xxxxxxxxx -->
+
+
+		<div id="jokeCorner">
+
+			<h3>
+				Joke Corner : Click a joke to see the answer !
+			</h3>
+
+			<span class="jokes" onClick="show('ans1');">
+				Q: Where does seaweed look for jobs ?
+			</span>
+			<span id="ans1">
+				A: In the &acute;kelp wanted&acute; adverts !
+			</span>
+			<br>
+
+			<span class="jokes" onClick="show('ans2');">
+				Q: Why couldn't the clownfish afford a house ?
+			</span>
+			<span id="ans2">
+				A: Because he didn't have anemone!
+			</span>
+			<br>
+
+			<span class="jokes" onClick="show('ans3');">
+				Q: Where do you go to meet nice fish ?
+			</span>
+			<span id="ans3">
+				A: It doesn't matter - any old plaice will do !
+			</span>
+			<br><br>
+
+		</div>
+
+		<br>
+	</div>
+
+	<!--  *** right-col  ***  -->
+	<div class="twoColright">
+
+		<h2>Competition !</h2>
+
+		<p>
+			Fill out the form to become a member of our online club and be in with a chance to win a fabulous prize !!
+		</p>
+
+		<p>
+			<a href="#" onmouseover="suprise();" onmouseout="backToNormal();">
+			<img src="images/prize.jpg" alt="prize_pic" id="prizeImg">
+			</a>
+		</p>
+
+		<p>
+			Mouse-over to see this months prize.
+		</p>
+
+		<h2>Newsletter</h2>
+
+		<p>
+			Be sure to join up to recieve your monthly copy of our fantastic newsletter. It contains excellent articles on the more advanced aspects of the hobby.
+		</p>
+
+	</div>
+
+	<footer>
+
+		<div id="rightFoot">
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+					alt="Valid CSS!" />
+			</a>
+		</div>
+
+		<div id="leftFoot">
+			Daragh Walshe
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="mailto:B00064428@student.itb.ie">Email Me : B00064428@student.itb.ie</a>
+		</div>
+
+	</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,672 @@
+/* ***********************************************************/
+/*     Daragh Walshe        B00064428         April 2013     */
+/*     Web. Dev. 2          website project       	     */
+/*************************************************************/
+
+
+
+body
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+}
+
+#wrapper
+{
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*********  background images  **********/
+#bg_img 
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/****************  Nav Bar  *****************/
+nav
+{
+	color: white;
+	overflow: auto;
+}
+
+nav ul
+{
+	margin-left: 13%;
+	margin-top: 8px;
+	padding: 0;
+}
+
+nav li
+{
+	display: inline;
+	list-style-type: none;
+}
+
+nav a
+{
+	text-decoration: none;
+	display: inline;
+	float: left;
+	width: 12%;
+	font-size: 0.8em;
+	text-align: center;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	background-color: purple;
+	color: white;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 1em 1em 0 0;
+}
+
+#thispage
+{
+	background-color: lightblue;
+	border-bottom: 1px solid lightblue;
+	color: black;
+}
+
+nav a:hover
+{
+	background-color: #B000B0;
+}
+
+/****************  header  *****************/
+#headerImg
+{
+	width: 100%;
+	border-top: 4px solid lightblue;
+	border-bottom: 5px solid lightblue;
+}
+
+/****************  3col liquid (home_page) & (News & Events) *****************/
+#left
+{
+	clear: both;
+	width: 20%;
+	color: white;
+	background: blue;
+	float: left;
+}
+
+#middle
+{
+	width: 60%;
+	background: gray;
+	opacity: 0.8;
+	float: left;
+}
+
+#middle h1, #middle p, #middle h3
+{
+	color: white;
+	text-align: center;
+	width: 70%;
+	margin-left: 15%;
+}
+#middle h1
+{
+	color: yellow;
+	text-shadow: 1px 1px #000;
+	text-decoration:overline;
+}
+
+#right, #rightHome
+{
+	font-family: courier, monospace;
+	width: 20%;
+	background: yellow;
+	float: left;
+}
+
+#rightHome
+{
+font-family:'Josefin Sans', sans-serif;
+}
+
+#rightHome p, #rightHome h2,#right p, #right h2, #left p, #left h2
+{
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+#left h3, aside h2
+{
+	text-align: center;
+	background: lightblue;
+	color: navy;
+	padding-bottom: 0.4em;
+	letter-spacing: 0.25em;
+}
+
+#jack_kipper, #joke1
+{
+	width: 100%;
+}
+
+
+/*************  LITTLE SLIDE SHOW ************/
+#rightHome #s_show 
+{
+	height:9em;
+	width:9em;
+	margin: 0 auto;
+}
+
+/*********** fancy table styling ************/
+#caption
+{
+	color: red;
+	font-style: italic;
+}
+
+#table1
+{
+	margin-left: 10%;
+	font-family: 'malgun gothic', sans-serif;
+	background-color: #FFFF44;
+	border-collapse: collapse;
+	width: 80%;
+}
+
+#table1 th
+{
+	padding: 0.5em;
+	text-align: left;
+}
+
+#table1 td
+{
+	padding: 0.5em;
+}
+
+#tableHead
+{
+	border-color: black;
+	background-color: darkgreen;
+	color: white;
+}
+
+.odd
+{
+	background-color: #EEEEEE;
+}
+
+.even
+{
+	background-color: #DDDDDD;
+}
+
+.have
+{
+	background-color: lightgreen;
+}
+
+.havenot
+{
+	background-color: #F55;
+}
+
+
+
+/****************  2col liquid (Membership form) *****************/
+.twoColleft
+{
+	clear: both;
+	width: 70%;
+	background: blue;
+	float: left;
+	opacity: 0.85;
+}
+.twoColright
+{
+	width: 30%;
+	background: yellow;
+	color: black;
+	float: left;
+}
+.twoColright p,.twoColright h2
+{
+	padding: 0 2em;
+	text-align: center;
+}
+
+#prizeImg
+{
+	height:12em;
+	width:12em;
+}
+
+/*************  Membership Form Styling  ***************/
+
+/* form-title styling */
+form h1, form p, legend
+{
+	color: purple;
+	text-align: center;
+}
+.redstar
+{
+	color: red;
+}
+#memberForm
+{
+	background-color: lightblue;
+	width: 100%;
+	padding: 0 0 1.9em 0;
+	font-weight: bold;
+}
+legend
+{
+	color: blue;
+	font-weight: bold;
+	background-color: #C7C1E8;
+	border: 1px solid #62718E;
+	padding: 0.1em 1em 0.4em 1em;
+}
+fieldset
+{
+	border: 1px solid #62718E;
+	background-color: #C7C1E8;
+	margin: 0 2em;
+}
+
+input
+{
+	width: 40%;
+	background-color: pink;
+}
+
+input:focus
+{
+	background-color: #F9FCB8;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* personal details 2-col layout */
+
+#leftCol, #rightCol
+{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+#rightCol
+{
+	float: right;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* label styling and spacing */
+
+label
+{
+	line-height: 1.5em;
+	color: blue;
+	font-weight: bold;
+	text-align: right;
+	border: 1px solid purple;
+	padding-right: 0.6em;
+	display: block;
+	float: left;
+	width: 40%;
+	margin-bottom: -0.5em;
+}
+
+#jokeCorner
+{
+	width: 100%;
+	background: lightblue;
+	color: black;
+}
+
+.jokes
+{
+	margin-left: 1em;
+}
+
+.jokes:hover
+{
+	text-shadow:0 0 3px aqua;
+	color: navy;
+}
+
+#ans1, #ans2, #ans3
+{
+	margin-left: 2em;
+	color: red;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* button styling */
+
+#submit,#reset,#startShow,#submitCart,#resetCart
+{
+	color: white;
+	background-color: #0508A7;
+	border: 2px outset #62718E;
+	border-radius: 1em;
+	width: 15%;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+
+#submit:hover,#reset:hover,#startShow:hover
+,#submitCart:hover,#resetCart:hover
+{
+	color: #DDDDEE;
+	background-color: blue;
+	border: 2px inset #62718E;
+}
+
+#reset
+{
+	margin-left: 8%;
+}
+
+#submit
+{
+	margin-left: 31%;
+}
+
+#startShow
+{
+	width: 25%;
+	margin-left: 20px;
+	border-radius: 0.3em;
+}
+
+#submitCart,#resetCart
+{
+	margin-left: 15%;
+	width: 70%;
+}
+
+/****************  2col Fixed  *****************/
+#innerWrapper
+{
+	width: 800px;
+	margin: 0 auto;
+}
+
+aside
+{
+	float: left;
+	width: 250px;
+	margin: 0;
+	background: blue;
+}
+
+section
+{
+	float: left;
+	width: 550px;
+	margin: 0;
+	background: grey;
+}
+
+section h1
+{
+	color: yellow;
+	text-align: center;
+	letter-spacing: 0.5em;
+	text-shadow: 1px 1px #000;
+}
+
+section #s_show 
+{
+	height: 400px;
+	width: 510px;
+	margin-left: 20px;
+}
+
+/*******  styling for links to useful sites  ********/
+#linkList
+{
+	color: white;
+	overflow: auto;
+	list-style-type: square;
+}
+
+#linkList a
+{
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	font-size: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.8em;
+	padding-left: 2em;
+	color: white;
+	box-sizing: border-box;	
+}
+
+#linkList a:hover
+{
+	background-color: #B000B0;
+}
+
+/****************  four col  *****************/
+
+#intro
+{
+	font-weight: bold;
+}
+
+h3
+{
+	text-align: center;
+}
+
+#floatLetter
+{
+	color: green;
+	font-size: 3em;
+	font-weight: bold;
+	float: left;
+	position: relative;
+	top: -0.3em;
+	margin-right: 0.15em;
+	text-shadow: 1px 1px #000;
+}
+
+#fourCol
+{
+	padding: 0 30px 0 30px;
+	background: grey;
+	opacity: 0.85;
+	column-count: 4;
+	-moz-column-count: 4; /* Firefox */
+	-webkit-column-count: 4; /* Safari and Chrome */
+	column-gap: 30px;
+	-moz-column-gap: 30px;
+	-webkit-column-gap: 30px;
+}
+
+.do, .dont
+{
+	font-weight: bold;
+	text-align: center;
+	background: lightgreen;
+	color: navy;
+	padding-bottom: 0.4em;
+	letter-spacing: 0.5em;
+}
+.dont
+{
+	background: pink;
+	color: red;
+}
+
+#firstFish dd
+{
+	color: yellow;
+	font-weight: bold;
+}
+
+.smallFloat, .smallFloatR
+{
+	width: 4em;
+	height: 4em;
+	float: left;
+	margin-right: 0.5em;
+}
+.smallFloatR
+{
+	float: right;
+	margin: 0 0 0 0.5em;
+}
+
+.listImg
+{
+	width: 70%;
+	margin-left: 15%;
+}
+
+/****************  shop  *****************/
+#table3
+{
+	position: fixed;
+	right: 2.5%;
+}
+
+#table3 .shopImg
+{
+	margin-left: 25%;
+}
+#table3 #GrandTotal
+{
+	margin-left: 15%;
+}
+
+#table3 td, #table3 th, #table2 th
+{
+	padding: 0.5em 0;	
+}
+
+#table2
+{
+	font-weight: bold;
+	text-align: left;
+	width: 70%;
+}
+
+#table2 th, #table2 td
+{
+	padding-left: 0.5em;
+	text-align: left;
+}
+
+.headnToe
+{
+	background-color: darkgreen;
+	color: white;
+}
+
+.shopImg
+{
+	width: 5em;
+	height: 5em;
+}
+
+.itemDesc
+{
+	color: green;
+	font-size: 1.1em;
+}
+
+
+#table2 input[type="number"]
+{
+	min-width: 3em;
+}
+
+#table2 input[type="text"]
+{
+	min-width: 3em;
+}
+
+/***************  site map  ***************/
+#siteMap 
+{
+	padding: 0.5em 0;
+	margin: auto 0;
+	color: white;
+	background-color:#0000ff;
+	opacity: 0.7;	
+}
+
+#siteMap ol
+{
+	margin-left: 4em;
+}
+#oldCompass
+{
+	float: right;
+	clear: left;
+	margin: 1.5em 2em 0 0;
+}	
+	
+#siteMap a
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+#siteMap a:hover
+{
+	color: yellow;
+	text-decoration: underline;
+}
+
+.mapLink
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-left: 2em;
+	list-style-image: url("../images/compass.jpg");
+}
+
+.mapDescr
+{
+	margin-left: 4em;
+	list-style-type: none;
+}
+
+/****************  footer  *****************/
+footer 
+{
+	background: green;
+	color: white;
+	clear: both;
+	padding-top: 0.4em;
+	overflow: auto;
+}
+
+#leftFoot
+{
+	margin-left: 3em;
+}
+
+footer a
+{
+	color: white;
+}
+
+#rightFoot
+{
+	float: right;
+	padding: 0 3em 0 0;
+}
+
+
+/***   FIN   ***/

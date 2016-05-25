@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+
+<!-- ********************************************************** -->
+<!--     Daragh Walshe        B00064428         April 2013      -->
+<!--     Web. Dev. 2          website project       			-->
+<!-- ********************************************************** -->
+
+<html>
+	<head>
+
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<meta charset="utf-8">
+
+		<title>
+			Slideshow
+		</title>
+
+		<style>
+			@import"css/sitestyle.css";
+		</style>
+
+		<script type="text/javascript" src="js/fishy.js"> </script>
+
+	</head>
+
+<body>
+<img src="images/tropical-fish.jpg" alt="tropical-fish" id="bg_img">
+
+<div id="wrapper">
+
+<!--  ********************  Nav Bar  ********************-->
+	<nav>
+		<ul>
+			<li role="link">
+				<a href="index.html">Home Page</a>
+			</li>
+			<li role="link">
+				<a href="news.html">News</a>
+			</li>
+			<li role="link">
+				<a href="join_up.html">Join up</a>
+			</li>
+			<li role="link">
+				<a href="slideshow.html" id="thispage">Slideshow</a>
+			</li>
+			<li role="link">
+				<a href="beginners.html">Beginners</a>
+			</li>
+			<li role="link">
+				<a href="shop.html">Shop</a>
+			</li>
+			<li role="link">
+				<a href="siteMap.html">Site Map</a>
+			</li>
+		</ul>
+	</nav>
+
+<!--  *********************  Header  ********************-->
+	<header>
+		<img src="images/banner.png" alt="banner_pic" id="headerImg">
+	</header>
+<!--  **********************  Body  *********************-->
+
+
+<div id="innerWrapper">
+
+	<!--  *** left-col, fixed width  ***-->
+	<aside>
+		<h2>List of useful links</h2>
+
+
+			<ol id="linkList">
+				<li>
+					<a href="http://www.fishforums.net">Fishforums</a>
+				</li>
+				<li>
+					<a href="http://www.thesaltybox.com">The salty box</a>
+				</li>
+				<li>
+					<a href="http://www.monsterfishkeepers.com">Monster Fishkeepers</a>
+				</li>
+				<li>
+					<a href="http://www.irishfishkeepers.com">Irish Fishkeepers</a>
+				</li>
+				<li>
+					<a href="http://www.tropicalfishkeeping.com">Tropical Fishkeeping</a>
+				</li>
+				<li>
+					<a href="http://www.totalfishkeeping.com">Total Fishkeeping</a>
+				</li>
+				<li>
+					<a href="http://forum.practicalfishkeeping.co.uk">Practical Fishkeeping</a>
+				</li>
+				<li>
+					<a href="http://www.fishkeepingforum.com">Fishkeeping Forum</a>
+				</li>
+			</ol>
+
+			<h2>&nbsp;</h2>
+	</aside>
+
+	<!--  *** right-col, fixed width  ***-->
+	<section>
+
+		<h1>Slideshow</h1>
+
+			<p>
+				<img src="images/slide1.jpg" id="s_show" width="400" height="400" alt="slideshow">
+			</p>
+			<p>
+				<button id="startShow" onclick="slideshow();">Start Slideshow</button>
+			</p>
+			<p>&nbsp;</p>
+
+	</section>
+
+</div>
+<hr>
+	<footer>
+
+		<div id="rightFoot">
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+					alt="Valid CSS!" />
+			</a>
+		</div>
+
+		<div id="leftFoot">
+			Daragh Walshe
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="mailto:B00064428@student.itb.ie">Email Me : B00064428@student.itb.ie</a>
+		</div>
+
+	</footer>
+
+</div>
+</body>
+</html>
